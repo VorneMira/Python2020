@@ -8,7 +8,6 @@
       <!-- HEAD SECTION-->
 <head>
     <meta charset="utf-8">
-    <title>Linkki</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -34,11 +33,8 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="fa fa-bars mobile-bars" style=""></span>
                 </button>
-                <a class="navbar-brand" href="index.html" >
-                    Linkki<!-- logo here-->
-                </a>
             </div>
-            <div class="navbar-collapse collapse" data-scrollreveal="enter from the right 50px">
+            <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class=""><a href="index.html">Home</a></li><!-- menu links-->
                     <li><a href="perusasiat.html">Perusasiat</a></li>
@@ -60,7 +56,7 @@
     <section id="Homepage">
         <div class="container">
             <div class="row">
-                <div data-scrollreveal="wait 0.5s and then ease-in-out 50px" class="col-md-6 col-md-offset-3">
+                <div class="col-md-6 col-md-offset-3">
 
                     <div class="align-center">
                         <h2 class="main-text">KOHTI PELIÄ</h2>
@@ -78,16 +74,9 @@
 
                   <h2> Satunnaisuus </h2>
 
-                  Saatat muistaa Scratch-kerhosta, miten esimerkiksi vihollisia voi Scratchilla sijoittaa satunnaisesti pelikentälle.
-                  Nyt opetellaan Pythonilla satunnaisluvun generoiminen valmista funktiota apuna käyttäen. Seuraavassa kuvassa on tapa
-                  jolla Scratchissa otetaan satunnaisluku väliltä 1-10.
-
-                </br></br>
-                  <img src="assets/img/randomi.png" />
-                </br>  </br>
-
-                Pythonissa saman toteuttamiseen tarvitaan random -kirjastoa. Se tuodaan ohjelmaan import random -käskyllä. random.randint(1, 10)
-                tekee saman kuin Scratchin versio, siis arpoo satunnaisluvun väliltä 1..10.
+                Nyt opetellaan Pythonilla satunnaisluvun generoiminen valmista funktiota apuna käyttäen.
+                Ensin Pythonissa tarvitaan random -kirjastoa. Se tuodaan ohjelmaan import random -käskyllä. random.randint(1, 10)
+                arpoo satunnaisluvun väliltä 1..10.
 
   </br>  </br>
 <pre>
@@ -97,7 +86,7 @@ print(random.randint(1, 10))
 </pre>
 
 
-<h2>Tehtävä 1: Nopan heittäminen</h2>
+<h2>Tehtävä 39: Nopan heittäminen</h2>
 
 <p>Tee ohjelma, joka heittää noppaa ja ilmoittaa silmäluvun.</p>
 
@@ -111,7 +100,7 @@ Silmäluku: 3
 Silmäluku: 5
 </pre>
 
-<h2>Tehtävä 2: Kolikon heittäminen</h2>
+<h2>Tehtävä 40: Kolikon heittäminen</h2>
 
 <p>Tee ohjelma, joka heittää kolikkoa ja ilmoittaa tuloksen (kruuna tai klaava).</p>
 
@@ -125,7 +114,7 @@ Tulos: kruuna
 Tulos: klaava
 </pre>
 
-<h2>Tehtävä 3: Salasanan arpoja</h2>
+<h2>Tehtävä 41: Salasanan arpoja</h2>
 
 <p>Tee ohjelma, joka arpoo käyttäjälle salasanan.
 Salasana muodostuu merkeistä a-z ja siinä on 8 merkkiä.</p>
@@ -140,7 +129,7 @@ Salasana: zitbfsnt
 Salasana: wlprcusq
 </pre>
 
-<h2>Tehtävä 4: Sekoittaja</h2>
+<h2>Tehtävä 42: Sekoittaja</h2>
 
 <p>Tee ohjelma, joka sekoittaa listan sisällön.
 Sovella ohjelmassa satunnaisuutta haluamallasi tavalla.</p>
@@ -153,7 +142,7 @@ sekoitaLista(luvut)
 tulostaLista(luvut)
 </pre>
 
-<h2> Tehtävä 5: Vihollisen sijainnit</h2>
+<h2> Tehtävä 43: Vihollisen sijainnit</h2>
 Tee ohjelma, joka luo listan nimeltään vihollisenSijainnit ja arpoo 1000 kappaletta vihollisen sijainteja lisäten ne listaan.
 Vihollisen sijainti on merkkijonopari x,y. Esimerkiksi "5,16" on kelpo vihollisen sijainti. Sekä x- että y-koordinaatit voivat
 olla väliltä 0-100. Tulosta lopuksi lista jotta näet mitä se sisältää.
@@ -179,7 +168,7 @@ lista.sort()
 print(lista) #tulostuu [1, 3, 4, 5]
 </pre>
 
-<h2> Tehtävä 6: Pistelista</h2>
+<h2> Tehtävä 44: Pistelista</h2>
 Tee ohjelma, joka kysyy käyttäjältä pelaajan nimen ja pisteet ja jatkaa tätä, kunnes käyttäjä antaa syötteen "lopeta" pelaajaa kysyttäessä. Tämän jälkeen
 tulostetaan parhaat pisteet ja niiden pelaaja.
 
@@ -208,17 +197,6 @@ Pihla, 50
      <!-- SCROLLUP LINK SECTION-->
     <a href="#Homepage" class="scrollup"><i class="fa fa-chevron-up"></i></a>
      <!--END SCROLLUP LINK SECTION-->
-    <!-- STYLE SWITCHER SECTION-->
-    <div  class="panel" style="color:white">
-        <div id="styledemo"  style="left: 0px;">
-		<span id="theme_blue" style="background-color:#37AFFF" ></span>
-		<span id="theme_green" style="background-color:#469E66" ></span>
-		<span id="theme_brown" style="background-color:#E69351" ></span>
-		<span id="theme_red" style="background-color:#E7484E" ></span>
-            </div>
-</div>
-<a class="trigger" href="#"></a>
-    <!-- END STYLE SWITCHER SECTION-->
     <!-- MAIN SCRIPTS SECTION-->
     <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="assets/js/jquery.js"></script>

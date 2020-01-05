@@ -103,7 +103,7 @@
           oikeassa järjestyksessä, joten
           jos ohjelma ei toimi niin tarkista että ne on kirjoitettu oikein. </br>
           </br>
-          <code>print("Hei maailma")</code>
+          <pre>print("Hei maailma")</pre>
           </br> </br>
           4. Aja koodi klikkaamalla hiiren oikealla näppäimellä koodisi päällä, ja valitsemalla "Run Python File in
           Terminal":
@@ -142,10 +142,10 @@
 
           Näin Pythonissa asetetaan arvot muuttujiin:
           </br> </br>
-          <code>
+          <pre>
             x=1</br>
             paikka="Kumpula"
-          </code>
+          </pre>
           </br> </br>
           Pythonissa muuttujia ei tarvitse ensin erikseen luoda, vaan niiden luonti tapahtuu kun niihin ensimmäisen
           kerran asetetaan arvo.
@@ -159,41 +159,35 @@
           Muuttujan voi myös tulostaa. Se edellyttää kuitenkin että muuttujaan on tallennettu jokin arvo aiemmin.
           Muuttujan tulostus tapahtuu näin:
 
+          </br> </br>
+          <pre>
+            print(paikka)
+          </pre>
           </br>
-          <img src="assets/img/muuttujantulostus.png" alt="print(paikka)" />
 
-          <h2> Paritehtävä 2: Muuttujan tulostus </h2>
-          <div style="border:1px solid black; padding: 10px;">Paritehtävä tarkoittaa sitä, että teet tehtävän parin
-            kanssa. Jos et löydä vierestäsi paria niin kerro siis ohjaajalle että
-            tarvitset parin. Pari tekee toisen version saman asian toteuttavasta ohjelmasta Scratchilla ja toisen
-            version Pythonilla.
-            Lopuksi pari testaa että ohjelma toimii ja näyttää sen ohjaajalle. </div>
-
-          </br>
+          <h2> Tehtävä 3: Muuttujan tulostus </h2>
 
           1. Määrittele muuttuja nimi, jolle annat arvoksi oman nimesi <i>merkkijonona</i> (eli lainausmerkit "" nimen
           ympärillä).
 
-          </br> </b3> 2. Tulosta tämän jälkeen (Scratchissa hahmo sanoo) tämä muuttuja. Tulostua pitäisi muuttujan
+          </br> </b3> 2. Tulosta tämän jälkeen tämä muuttuja. Tulostua pitäisi muuttujan
           sisältö, eli oma nimesi.
 
           <h2>Laskutoimitukset</h2>
 
           Tietokone osaa tehdä laskutoimituksia Python-koodin antamien ohjeiden mukaisesti. Harjoitellaan nyt tekemään
           yhteen-, kerto- ja vähennyslaskuja Pythonilla.
-          Seuraavaksi ensin Scratch-versio lukujen 1 ja 4 summan sanomisesta, sitten Pythonilla saman tulostamisesta.
-
-          </br></br>
-          <img src="assets/img/scratch_summa.png" alt="Scratch summa 1+4" /> </br>
-
+          </br> </br>
+          <pre>
+            print(1 + 4)
+          </pre>
           </br>
-          <img src="assets/img/yhteenlasku.png" alt="print(1 + 4)" />
 
-          <h2> Paritehtävä 3: Tee laskutoimituksia </h2>
-          1. Tehkää ohjelma, joka Pythonissa tulostaa, Scratchissa sanoo kahden luvun tulon. Pythonissa kertomerkki on
-          tähtimerkki *. Valitkaa luvut itse. Käyttäkää ylläolevaa 1 + 4 -esimerkkiä apuna.
+          <h2> Tehtävä 4: Tee laskutoimituksia </h2>
+          1. Tee ohjelma, joka Pythonissa tulostaa kahden luvun tulon. Pythonissa kertomerkki on
+          tähtimerkki *. Valitse luvut itse. Käytä ylläolevaa 1 + 4 -esimerkkiä apuna.
 
-          </br> </br> 2. Tehkää ohjelma, joka tulostaa, Scratchissa sanoo, edellisessä kohdassa käyttämiesi lukujen
+          </br> </br> 2. Tee ohjelma, joka tulostaa edellisessä kohdassa käyttämiesi lukujen
           erotuksen.
 
           <h2>Laskutoimituksen tuloksen tallentaminen muuttujaan</h2>
@@ -206,19 +200,15 @@ erotus = 2 - 1
 print(erotus)
 </pre>
 
-          <h2> Tehtävä 4: Laskutoimituksen tulos muuttujaan </h2>
+          <h2> Tehtävä 5: Laskutoimituksen tulos muuttujaan </h2>
           Tee ohjelma, joka laskee yhteenlaskun 1 + 5 tallentaen sen tuloksen muuttujaan summa. Tämän jälkeen tulosta
-          muuttuja summa. Tulostuksen pitäisi näyttää seuraavalta:
-          </br> </br>
-          <img src="assets/img/yhteenlaskutulostus.png" />
+          muuttuja summa. 
 
           <h2> Merkkijonon kysyminen käyttäjältä ja sen tallentaminen muuttujaan </h2>
-          Nyt osaamme tulostaa muuttujan sekä tekstiä. Otetaan seuraavaksi Scratch-vertaus käyttäjältä merkkijonon
-          kysymiseen. Seuraavassa ensin Scratch-koodi ja sitten Python-koodi jossa sanominen on muutettu tulostamiseksi.
+          Nyt osaamme tulostaa muuttujan sekä tekstiä. 
+          <br/><br/>
           Testaa Python-esimerkkiä.
 
-          </br> </br>
-          <img src="assets/img/kysymerkkijono.png" />
           </br> </br>
           <pre>
 vastaus = input("Anna merkkijono: ")
@@ -231,7 +221,7 @@ print(vastaus)
           lukua ja tietokone voisi laskea esimerkiksi niiden yhteenlaskun. Näin pääsisimme lähemmäksi osion lopullista
           tavoitettamme, laskimen koodaamista.
 
-          <h2> Tehtävä 5: Tee esimerkin mukaan </h2>
+          <h2> Tehtävä 6: Tee esimerkin mukaan </h2>
 
           Seuraava koodi kysyy käyttäjältä kaksi lukua,
           asettaa ne muuttujiin x ja y, sekä tulostaa niiden summan. Kirjoita koodi tekstieditoriin, aja se ja testaa
@@ -257,11 +247,11 @@ print(summa)
 
           </br></br>
           <pre>
-x = input("Anna ensimmäinen luku: ")
-y = input("Anna toinen luku: ")
-summa = x + y
-print(summa)
-</pre>
+          x = input("Anna ensimmäinen luku: ")
+          y = input("Anna toinen luku: ")
+          summa = x + y
+          print(summa)
+          </pre>
 
           </br> Testaa ohjelmaa. Mitä tulokselle käy, onko tulos oikein? Mistä arvelet sen johtuvan?
           </br> Vastaus on, että int( ) -koodilla ympäröity käyttäjältä luvun kysyminen kohtelee kysyttyä lukua
@@ -271,7 +261,7 @@ print(summa)
           toisessa esimerkissä vain yhdistetään kysytyt luvut niin että esimerkiksi luvuista 1 ja 2 tulisi tulokseksi
           "12".
 
-          <h2>Tehtävä 6: Tulosta käyttäjältä kysyttyjen lukujen osamäärä </h2>
+          <h2>Tehtävä 7: Tulosta käyttäjältä kysyttyjen lukujen osamäärä </h2>
           Tee ohjelma, joka kysyy käyttäjältä kaksi lukua ja tulostaa niiden osamäärän. Kahden luvun jakolasku tehdään
           Pythonissa / -merkillä.
 
@@ -283,20 +273,14 @@ print(summa)
           Seuraavista Python-esimerkeistä lähtien
           mukana on <i>sisennyksiä</i> koodissa. Sisennys siis tarkoittaa sitä, että seuraava koodirivi alkaa sisempää
           kuin edellinen. Pythonissa sisennykset on erittäin tärkeitä
-          tehdä oikein esimerkkien mukaan, muuten koodin ajaminen ei onnistu. Sisennykset ovat ensimmäinen merkittävä
-          Scratchin Pythonista erottava tekijä. Yhtä sisennettyä
+          tehdä oikein esimerkkien mukaan, muuten koodin ajaminen ei onnistu. Yhtä sisennettyä
           koodialuetta kutsutaan <i> lohkoksi </i>. Lohko-sanaa tullaan käyttämään myöhemmin.
-
 
           <h2 id="onkolukupositiivinen"> Esimerkki ehdollisuudesta: Onko luku positiivinen </h2>
 
           Otetaan esimerkiksi ohjelma, joka kysyy käyttäjältä lukua ja kertoo, onko luku positiivinen vai negatiivinen.
           Tässä esimerkissä 0 lasketaan mukaan positiiviseksi luvuksi.
 
-          </br> </br>
-          <img src="assets/img/scratch_positiivinen.png" />
-
-          </br> </br>
           <pre>
 luku = int(input("Anna luku: "))
 if luku > -1:
@@ -315,17 +299,10 @@ else:
             tulostaisi "Luku on positiivinen" jos luku on positiivinen, mutta jos luku on negatiivinen niin se ei
             tulostaisi mitään. </h3>
 
-          <h2> Paritehtävä 7: Vuositarkistus </h2>
+          <h2> Tehtävä 8: Vuositarkistus </h2>
 
-          <div style="border:1px solid black; padding: 10px;">Paritehtävä tarkoittaa sitä, että teet tehtävän parin
-            kanssa. Jos et löydä vierestäsi paria niin kerro siis ohjaajalle että
-            tarvitset parin. Pari tekee toisen version saman asian toteuttavasta ohjelmasta Scratchilla ja toisen
-            version Pythonilla.
-            Lopuksi pari testaa että ohjelma toimii ja näyttää sen ohjaajalle. </div>
-
-          </br>
-          Tee ohjelma, joka kysyy käyttäjältä vuoden. Mikäli vuosi on jo mennyt (eli on pienempi kuin 2017), tulostetaan
-          (Scratchissa hahmo sanoo) "Vuosi meni jo!", muuten tulostetaan: "Vuosi ei ole vielä mennyt.".
+          Tee ohjelma, joka kysyy käyttäjältä vuoden. Mikäli vuosi on jo mennyt (eli on pienempi kuin 2020), tulostetaan
+          "Vuosi meni jo!", muuten tulostetaan: "Vuosi ei ole vielä mennyt.".
           Käytä kopioimaasi luvun positiivisuuden/negatiivisuuden ilmoittavaa esimerkkiä pohjana.
 
           <h2> Suuruuden vertailuoperaattorit </h2>
@@ -333,45 +310,40 @@ else:
           Edellisessä tehtävässä käytettiin if-lauseessa pienempi kuin -operaattoria. Seuraavassa taulukossa kaikki
           vertailuoperaattorit ja niiden merkitykset.
           Huomaa että Pythonissa "pienempi tai yhtä suuri kuin" sekä "suurempi tai yhtä suuri kuin" toteutetaan yhdellä
-          operaattorilla, kun Scratchissa
-          tarvitaan "tai" väliin.
+          operaattorilla.
 
           <table border="1" style="margin-top: 20px;">
             <tr>
               <th>operaattori</th>
               <th>merkitys</th>
               <th>esimerkki</th>
-              <th>sama esimerkki Scratchilla</th>
             </tr>
             <tr>
               <td>
                 <</td> <td>pienempi kuin
               </td>
-              <td>1 < 2</td> <td> <img src="assets/img/scratch_pienempikuin.png" /> </td>
+              <td>1 < 2</td>
             </tr>
             <tr>
               <td>></td>
               <td>suurempi kuin</td>
               <td>1 > 2</td>
-              <td><img src="assets/img/scratch_suurempikuin.png" /></td>
             </tr>
             <tr>
               <td>==</td>
               <td>yhtä suuri kuin</td>
               <td>1 == 2</td>
-              <td><img src="assets/img/scratch_yhtasuurikuin.png" /></td>
             </tr>
             <tr>
               <td>
                 <=</td> <td>pienempi tai yhtä suuri kuin
               </td>
-              <td>1 <= 2</td> <td><img src="assets/img/scratch_pienempitaiyhtasuurikuin.png" /></td>
+              <td>1 <= 2</td>
             </tr>
             <tr>
               <td>>=</td>
               <td>suurempi tai yhtä suuri kuin</td>
               <td>1 >= 2</td>
-              <td><img src="assets/img/scratch_suurempitaiyhtasuurikuin.png" /></td>
             </tr>
 
           </table>
@@ -380,19 +352,19 @@ else:
 
           Seuraava esimerkkikoodi kysyy käyttäjältä syötettä <i> merkkijonona </i>. Mikäli syöte on sama kuin
           salasanamme
-          "pythonkerho2017", paljastetaan salainen tieto kerhon ajankohdasta. Mikäli käyttäjän antama salasana on
+          "python2020", paljastetaan jouluaaton päivämäärä. Mikäli käyttäjän antama salasana on
           väärin,
           tulostetaan "Salasana väärin!". </br>
 
           </br>
-          <img src="assets/img/salasana.png" alt="
-      &#10; salasana = 'pythonkerho2017'
-      &#10; syöte = input('Anna salasana: ')
-
-      &#10; if syöte == salasana:
-       &#10; &emsp; print('Python-kerho keskiviikkoisin linkissä!')
-       &#10; else:
-      &#10;  &emsp; print('Salasana väärin!')" /> </br>
+          <pre>
+            salasana = "python2020"
+            syote = input("Anna salasana: ")
+            if syote == salasana:
+              print("Jouluaatto on 24.12.2020.")
+            else:
+              print("Salasana väärin!")
+          </pre> </br>
 
           <h2 id="montaelselohkoa"> Monta else -lohkoa </h2>
           Edellisessä tehtävässä ohjelma tarkisti, onko käyttäjän antama vuosi mennyt vai ei. Nyt haluamme tehdä
